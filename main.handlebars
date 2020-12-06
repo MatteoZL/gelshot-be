@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelshot</title>
+</head>
+<body>
+  <h1>Hola {{values.name}}!</h1>
+  <h1>Estamos felices por tu compra</h1>
+  <p>Tu orden esta a nombre de: {{values.name}} {{values.lastname}}</p>
+  <p>Al número celuar {{values.number}} en la ciudad de {{values.city}} y llegará a la dirección {{values.address}}</p>
+  <h2>Muchas gracias por escogernos!</h2>
+  <h3>Información de tu pedido</h3>
+   <ul>
+       {{#each values.products}}
+       <li><img src={{this.photo}}></li>
+         <li>{{this.name}}</li>
+         <li>{{this.description}}</li>
+         <li>{{this.price}}</li>
+       {{/each}}
+   </ul>  
+   {{order.products}}
+   <h4>Total: {{values.total}}</h4>
+</body>
+</html>

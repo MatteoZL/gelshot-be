@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelshot</title>
+</head>
+<body>
+    <h1>Hola yo!</h1>
+	<h1>Estamos felices por tu compra</h1>
+    <h3>Información de tu pedido</h3>
+    <ul>
+        {{#each values.products}}
+          <li>{{this.name}}</li>
+          <li>{{this.quantity}}</li>
+          <li>{{this.price}}</li>
+        {{/each}}
+    </ul>
+    
+	{{order.products}}
+	<h4>Total: {{values.total}}</h4>
+</body>
+</html>
