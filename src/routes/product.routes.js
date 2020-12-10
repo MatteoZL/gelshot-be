@@ -5,10 +5,12 @@ const router = Router();
 
 router.route('/')
   .get(product.allProducts)
-  .post(product.productById);
+  .post(product.createProduct);
 
-router.route('/:type')
-  .get(product.productsByType)
+router.route('/:typeId')
+  .get(product.productsByTypeOrId)
+  .put(product.updateProduct)
+  .delete(product.deleteProduct);
 
 router.route('/:type/:drink')
   .get(product.productsByTypeDrink);

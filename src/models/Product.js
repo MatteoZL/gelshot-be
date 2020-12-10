@@ -4,6 +4,7 @@ const productSchema = new Schema({
   type: {
     type: String,
     required: true,
+    lowercase: true,
   },
   name: {
     type: String,
@@ -16,8 +17,9 @@ const productSchema = new Schema({
   drink: {
     type: String,
     required: true,
+    lowercase: true,
   },
-  image: {
+  photo: {
     type: String,
     required: true,
   },
