@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
     "cloudinary": "^1.23.0",
     "connect-history-api-fallback": "^1.6.0",
     "cors": "^2.8.5",
@@ -23,10 +27,6 @@
     "nodemailer-express-handlebars": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.7",
-    "@babel/core": "^7.12.7",
-    "@babel/node": "^7.12.6",
-    "@babel/preset-env": "^7.12.7",
     "nodemon": "^2.0.6"
   }
 }
